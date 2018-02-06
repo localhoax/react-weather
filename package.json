@@ -1,0 +1,31 @@
+{
+  "name": "react-tut",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-geolocated": "^2.3.0",
+    "react-scripts": "1.1.0",
+    "superagent": "^3.8.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frozen4code/react-tut-ez.git"
+  },
+  "author": "frozen4code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frozen4code/react-tut-ez/issues"
+  },
+  "homepage": "https://github.com/frozen4code/react-tut-ez#readme"
+}
