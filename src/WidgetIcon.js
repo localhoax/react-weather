@@ -36,6 +36,9 @@ class WidgetIcon extends Component {
           ),
           'Rainy':(
             <SunShower />
+          ),
+          'Rain':(
+            <Rainy />
           )
         }[this.props.type]}
       </div>
