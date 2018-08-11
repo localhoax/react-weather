@@ -1,8 +1,9 @@
 {
-  "name": "react-tut",
+  "name": "react-weather",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
+    "dotenv": "^6.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-geolocated": "^2.3.0",
@@ -15,17 +16,16 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "index.js",
+  "description": "React project for Weather using Geolocation and openweathermap API",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frozen4code/react-tut-ez.git"
+    "url": "git+https://github.com/frozen4code/react-weather.git"
   },
   "author": "frozen4code",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frozen4code/react-tut-ez/issues"
+    "url": "https://github.com/frozen4code/react-weather/issues"
   },
-  "homepage": "https://github.com/frozen4code/react-tut-ez#readme"
+  "homepage": "https://github.com/frozen4code/react-weather#readme"
 }

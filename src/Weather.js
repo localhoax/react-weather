@@ -8,13 +8,10 @@ class Weather extends Component {
   }
   componentWillMount()  {
     // Call the first time the component is loaded, right before the component is added to the page
-  }
-  componentDidMount() {
-    // Called after the component has been rendered in the page
     navigator.geolocation.getCurrentPosition(
       (pos)=>{
-        var lat = pos.coords.latitude;
-        var lon = pos.coords.longitude;
+        let lat = pos.coords.latitude;
+        let lon = pos.coords.longitude;
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=ea664939fa1be127bc54c0b14e3842d9`)
           .then(res => res.json())
           .then(res=>{
@@ -42,6 +39,10 @@ class Weather extends Component {
       }
     );
   }
+  componentDidMount() {
+    // Called after the component has been rendered in the page
+    
+  }
   componentWillReceiveProps(nextProps){
     // Called when the props provided to the component are changed.
   }
@@ -53,14 +54,14 @@ class Weather extends Component {
     // Called when the component is removed
   }
   render(){
-    var tempC = (1.0*this.state.temp).toFixed(1);
-    var tempF = (1.8*tempC + 32).toFixed(1);
+    let tempC = (1.0*this.state.temp).toFixed(1);
+    let tempF = (1.8*tempC + 32).toFixed(1);
     if(this.state.willWork){
       return(
         <div className="main-widget">
           <h2 className='heading'>Today's Weather</h2>
           <WidgetIcon type={this.state.description}/>
-          <h3 className='information temp'>{tempC} ℃ | {tempF} ℉</h3>
+          <h3 className='information temp' style={{marginTop:10+"px"}}>{tempC} ℃ | {tempF} ℉</h3>
           <p>{this.state.description}</p>
           <p>{this.state.city}, {this.state.country}</p>
         </div>

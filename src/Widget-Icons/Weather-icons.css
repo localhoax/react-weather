@@ -25,8 +25,8 @@ h1 {
   position: relative;
   display: inline-block;
   color: #330962;
-  width: 12em;
-  height: 10em;
+  width: 10em;
+  height: 8em;
   font-size: 1em; /* control icon size here */
 }
 
@@ -213,7 +213,7 @@ h1 {
   left: 50%;
   margin: -1.025em 0 0 -1.0125em;
   color: #fff;
-  list-height: 1em;
+  line-height: 1em;
   opacity: 0.2;
   animation: spin 8s linear infinite reverse;
 }

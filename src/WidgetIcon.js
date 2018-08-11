@@ -10,39 +10,27 @@ import './WidgetIcon.css';
 class WidgetIcon extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      type: this.props.type
+    };
+  }
+  handleType(type){
+    switch(type){
+      case 'Clouds': return(<Cloudy/>)
+      case 'Smoke': return(<Smoke/>)
+      case 'Snow': return(<Flurries/>)
+      case 'Drizzle': return(<Rainy/>)
+      case 'Clear': return(<Sunny/>)
+      case 'Thunderstorm': return(<ThunderStorm/>)
+      case 'Rainy': return(<SunShower/>)
+      case 'Rain': return(<Rainy/>)
+      default: return(<Smoke/>)
+    }
   }
   render() {
     return(
-      <div>
-        {{
-          'Clouds': (
-            <Cloudy />
-          ),
-          'Smoke': (
-            <Smoke />
-          ),
-          'Snow':(
-            <Flurries />
-          ),
-          'Drizzle':(
-            <Rainy />
-          ),
-          'Clear':(
-            <Sunny />
-          ),
-          'Thunderstorm':(
-            <ThunderStorm />
-          ),
-          'Rainy':(
-            <SunShower />
-          ),
-          'Rain':(
-            <Rainy />
-          )
-        }[this.props.type]}
-      </div>
-    );
+      this.handleType(this.state.type)
+    )
   }
 }
 export default WidgetIcon;
