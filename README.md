@@ -6,7 +6,7 @@
 <p align="center"><strong>Homepage</strong></p>
 
 ---
-# Technology Stack
+### Technology Stack
 * ReactJS
 * React Geolocation
 * NodeJS
@@ -16,5 +16,5 @@
 * `npm start` or `yarn start`
 
 ### Credits
-[OpenWeatherMap API](https://openweathermap.org/api)
-[Animated Weather Icons](https://codepen.io/joshbader/pen/EjXgqr)
+* [OpenWeatherMap API](https://openweathermap.org/api)
+* [Animated Weather Icons](https://codepen.io/joshbader/pen/EjXgqr)
