@@ -4,17 +4,21 @@
   "private": false,
   "dependencies": {
     "dotenv": "^6.0.0",
+    "gh-pages": "^2.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-geolocated": "^2.3.0",
     "react-scripts": "^1.1.4",
     "superagent": "^3.8.2"
   },
+  "homepage": "http://localhoax.github.io/react-weather",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "description": "React project for Weather using Geolocation and openweathermap API",
   "devDependencies": {},
@@ -26,6 +30,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/frozen4code/react-weather/issues"
-  },
-  "homepage": "https://github.com/frozen4code/react-weather#readme"
+  }
 }
